@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1 style="text-align: left; display:flex; flex-direction: column; align-items: left">Welcome to word search</h1>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="styles.css" rel="styles" type="text/css">
+</head>
+<body style="background-color:powderblue;" >
+    <form>
+        <div>
+            Please insert a word:
+            <br>
+            <input type="text" name="insert" id="insert" >
+            <button type="button" id="insertbtn" onclick="insertToDb();">Insert</button>
+            <li id = "error" style="color:red; list-style-type:none; display:none ">Cannot insert an empty word</li>
+        </div>
+    </form>
+<form>
+<br>
+    <div  class="allWords">
+        <br>
+        Click here to get all words:<br>
+        <button type="button" id="allwords" onclick="getMyWords();">get my words</button>
+        <ul id="dynamic-list" class="allWords" style="list-style-type:none;">
+        </ul>
+    </div>
+</form>
+    <form>
+    <div>
+      <br>
+        Insert a word to match:<br>
+        <input type="text" name="match" id="match">
+        <button type="button" id="matchbtn" onclick="matchWord();">match</button>
+        <li id = "errorMatch" style="color:red; list-style-type:none; display:none ">Cannot match empty word</li>
+        <ul id="dynamic-list-match" class="allWords" style="list-style-type:none;">
+        </ul>
+  </div>
+</form >
+    <input type="radio" name="myRadioGroup" value="1" onclick="check(this.value);">
+    <input type="radio" name="myRadioGroup" value="2" onclick="check(this.value);">
+    <input type="radio" name="myRadioGroup" value="3" onclick="check(this.value);">
+</form>
+
+    <p>Hello. Do you want to visit the website <a href="http://www.google.com">Google</a>?<br />
+        It's a good website! ;-)</p>
+
+    <p>Hello. Do you want to view <a href="page2.htm">page 2</a> ?</p>
+
+</body>
+</html>
